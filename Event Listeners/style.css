@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box; 
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.dugme {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 7em;
+    height: 3em;
+}
+
+.dugme:hover {
+    cursor: pointer;
+}
+
+.crvena-pozadina {
+    background-color: red;
+}
+
+.loptica {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.rupa {
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    width: 7em;
+    height: 3.5em;
+    border-radius: 50%;
+    background-color: black;
+}

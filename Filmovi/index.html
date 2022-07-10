@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Online fimlovi</title>
+  </head>
+  <body>
+    <header>
+      <h1>Gledaj filmove online</h1>
+    </header>
+    <div class="container">
+      <div class="card">
+        <img src="./slike/batman.jpg" alt="The Batman Movie" srcset="" />
+        <h2>The batman (2022)</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+          praesentium similique vitae voluptatum repellendus quibusdam?
+        </p>
+        <p class="price">Cena: $<span>50</span></p>
+        <button class="add-btn" onclick="addToWatchlist(this)">Gledaj</button>
+        <button class="remove-btn" onclick="removeFromWatchlist(this)">
+          &#10005;
+        </button>
+      </div>
+      <div class="card">
+        <img
+          src="./slike/spidey.jpg"
+          alt="Spiderman No Way Home movie"
+          srcset=""
+        />
+        <h2>Spiderman no way home (2021)</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+          praesentium similique vitae voluptatum repellendus quibusdam?
+        </p>
+        <p class="price">Cena: $<span>35</span></p>
+        <button class="add-btn" onclick="addToWatchlist(this)">Gledaj</button>
+        <button class="remove-btn" onclick="removeFromWatchlist(this)">
+          &#10005;
+        </button>
+      </div>
+      <div class="card">
+        <img src="./slike/007.jpg" alt="James Bond movie" srcset="" />
+        <h2>No time to die (2021)</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+          praesentium similique vitae voluptatum repellendus quibusdam?
+        </p>
+        <p class="price">Cena: $<span>60</span></p>
+        <button class="add-btn" onclick="addToWatchlist(this)">Gledaj</button>
+        <button class="remove-btn" onclick="removeFromWatchlist(this)">
+          &#10005;
+        </button>
+      </div>
+      <div class="card">
+        <img
+          src="./slike/jurassic-world.jpg"
+          alt="Jurassic World Dominion movie"
+          srcset=""
+        />
+        <h2>Jurassic World Dominion (2021)</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+          praesentium similique vitae voluptatum repellendus quibusdam?
+        </p>
+        <p class="price">Cena: $<span>80</span></p>
+        <button class="add-btn" onclick="addToWatchlist(this)">Gledaj</button>
+        <button class="remove-btn" onclick="removeFromWatchlist(this)">
+          &#10005;
+        </button>
+      </div>
+    </div>
+    <footer>
+      <h2 id="total"></h2>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

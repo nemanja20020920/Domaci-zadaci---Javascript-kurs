@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+div.to-do-container {
+    width: 100vw;
+    height: 100%;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.to-do-container > header {
+    width: 100%;
+    padding: 2em;
+    background-color: rgb(255, 51, 51);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.to-do-container > header > h1 {
+    font-size: 2.2em;
+    color: rgb(255, 255, 255);
+}
+
+div.to-do-container > header > div.input > input {
+    margin: -2px;
+    width: 60em;
+    padding: 1em;
+    height: 3em;
+    border: none !important;
+    outline: none !important;
+    font-size: 1em;
+}
+
+div.to-do-container > header > div.input > button.confirm {
+    padding: 0;
+    margin: -2px;
+    width: 20em;
+    height: 3em;
+    background-color: rgb(204, 204, 204);
+    outline: none !important;
+    font-size: 1em;
+    border: none !important;
+    transition: all .2s;
+}
+
+div.to-do-container > header > div.input > button.confirm:hover {
+    cursor: pointer;
+    background-color: rgb(166, 166, 166);
+    transition: all .2s;
+}
+
+div.to-do-container > ul.list {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+div.to-do-container > ul.list:hover {
+    cursor: pointer;
+}
+
+div.to-do-container > ul.list > li.list-item {
+    width: 100% ;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none !important;
+}
+
+div.to-do-container > ul.list > li.list-item:nth-child(odd) {
+    background-color: rgb(204, 204, 204);
+}
+
+div.to-do-container > ul.list > li.list-item:hover {
+    background-color: rgb(191, 191, 191);
+}
+
+div.to-do-container > ul.list > li.list-item > span {
+    opacity: 0;
+    margin: auto 1em;
+}
+
+div.to-do-container > ul.list > li.list-item > h2 {
+    margin: auto .5em;
+    font-size: 1.3em;
+    font-weight: normal;
+    justify-self: flex-start;
+}
+
+div.to-do-container > ul.list > li.list-item > button.remove {
+    height: 58.5px;
+    padding: 1em;
+    border: none;
+    font-size: 1em;
+    margin: 0 0 0 auto;
+    justify-self: flex-end;
+    text-align: center;
+    background-color: transparent;
+}
+
+div.to-do-container > ul.list > li.list-item > button.remove:hover {
+    cursor: pointer;
+    background-color: rgb(255, 51, 51);
+}
+
+div.to-do-container > ul.list > li.checked {
+    background-color: rgb(102, 102, 102) !important;
+    color: rgb(255, 255, 255);
+}
+
+div.to-do-container > ul.list > li.checked:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+div.to-do-container > ul.list > li.checked > h2 {
+    text-decoration: line-through;
+}
+
+div.to-do-container > ul.list > li.checked > span {
+    opacity: 1;
+}
+
+div.to-do-container > ul.list > li.checked > button.remove {
+    color: rgb(255, 255, 255);
+}
